@@ -9,7 +9,7 @@ import (
 func TestHello(t *testing.T) {
 	myHandler := NewHandler()
 
-	req, _ := http.NewRequest("GET", "/helloooooo", nil)
+	req, _ := http.NewRequest("GET", "/hello", nil)
 	res := httptest.NewRecorder()
 
 	myHandler.ServeHTTP(res, req)
