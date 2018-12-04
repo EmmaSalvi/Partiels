@@ -26,7 +26,7 @@ func main() {
 		Handler: myHandler,
 	}
 
-	fmt.Println("Coucou le log!")
+	fmt.Println("Bonjour l'app de dev ;)")
 	fmt.Println("Server is running at", port)
 
 	log.Fatal(server.ListenAndServe())
