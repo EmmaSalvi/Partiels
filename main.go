@@ -28,6 +28,7 @@ func main() {
 
 	fmt.Println("Bonjour l'app de dev ;)")
 	fmt.Println("Bonjour l'app staging")
+	fmt.Println("Bonjour la prod!!")
 	fmt.Println("Server is running at", port)
 
 	log.Fatal(server.ListenAndServe())
