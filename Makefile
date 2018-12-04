@@ -8,13 +8,13 @@ build:
 release:
 	GOOS=windows GOARCH=386 go build
 
-build: test
-  go build
+build:
+	go build
 
 infra:
-  terraform apply
+	terraform apply
 
-start : 
+start :
 	docker-compose up
 
 status :
@@ -24,6 +24,6 @@ status :
 push :
 	git push origin master
 
-publish: build
+publish: 
 	heroku push origin master
 
